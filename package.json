@@ -11,10 +11,6 @@
     "lint:js": "eslint . --format codeframe",
     "lint:css": "stylelint src/styles/**/*.scss"
   },
-  "engines": {
-    "node": "^11.0.0",
-    "npm": ">=3.10.5"
-  },
   "keywords": [
     "lightning",
     "design",
