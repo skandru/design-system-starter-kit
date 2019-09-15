@@ -7,7 +7,7 @@ const express = require('express')
 const app = express()
 const auth = require('http-auth')
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 
 // Basic auth
 // Set USERNAME and PASSWORD environment variables
