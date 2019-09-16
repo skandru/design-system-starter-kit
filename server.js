@@ -24,4 +24,4 @@ if (process.env.USERNAME && process.env.PASSWORD) {
 app.use('/', express.static('./dist'))
 
 app.listen(port, () =>
-  console.log(`Listening on port ${port}`))
+  console.log(`Listening on port here ${port}`))
