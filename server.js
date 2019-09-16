@@ -7,7 +7,7 @@ const express = require('express')
 const app = express()
 const auth = require('http-auth')
 
-const port = process.env.PORT || 8080
+// const port = process.env.PORT || 8080
 
 // Basic auth
 // Set USERNAME and PASSWORD environment variables
@@ -23,5 +23,6 @@ if (process.env.USERNAME && process.env.PASSWORD) {
 
 app.use('/', express.static('./dist'))
 
-app.listen(port, () =>
-  console.log(`Listening on port ${port}!\n\nDeveloping locally? Run "npm run dev" instead.`))
+app.listen(process.env.PORT || 3000, function () {
+  console.log('up and running on port ' + process.env.PORT)
+})
