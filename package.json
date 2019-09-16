@@ -5,6 +5,7 @@
   "description": "Boilerplate to get started with a local Lightning Design System installation",
   "main": "",
   "scripts": {
+    "start": "npm run build && node server.js",
     "test": "gulp",
     "dev": "gulp",
     "prestart": "gulp",
